@@ -13,39 +13,41 @@
     outline: 1px solid red;
 }
 
-body, #welcome-section {
-    background: linear-gradient(#6F7190, #8C8DA6);
-}
+/* ////////////////////        Nav/Bar Section        ///////////////////////////////////////////////////////////////////////////// */
 
 #header {
     width: 100vw;
-    position: fixed;    
-}
-
-#navbar, #navbar ul {
-    display: flex;
 }
 
 #navbar {
-    justify-content: flex-end;
-    align-items: center;
-    height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    padding: 1rem;
+    background-color: #333;
 }
 
-#navbar li, #navbar .nav-link {
-    font-size: large;
-    text-decoration: none;
+.navbar-group {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row nowrap;
+}
+
+.navbar-group li {
     list-style: none;
+}
+
+.navbar-group a {
+    color: var(--off-white);
+    text-decoration: none;
     width: 125px;
     text-align: center;
 }
 
-.nav-icon {
-    width: 1em;
-}
+/* ////////////////////        Welcome Section        ///////////////////////////////////////////////////////////////////////////// */
 
-.nav-link:hover, .nav-link, .welcome-section-t {
-    color: var(--off-white);
+#welcome-section {
+    background: linear-gradient(#6F7190, #8C8DA6);
 }
 
 #welcome-section {

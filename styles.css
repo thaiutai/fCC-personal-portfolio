@@ -10,10 +10,18 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+}
+
+body {
+    background: linear-gradient(#6F7190, #8C8DA6);
 }
 
 /* ////////////////////        Nav/Bar Section        ///////////////////////////////////////////////////////////////////////////// */
+
+#header-and-nav {
+    height: 10vh;
+}
 
 #header {
     width: 100vw;
@@ -24,13 +32,14 @@
     justify-content: space-between;
     align-items: center;            
     padding: 1rem;
-    background-color: #333;
+    background-color: transparent;
 }
 
 .navbar-group {
     display: flex;
     gap: 1rem;
     flex-flow: row nowrap;
+    gap: 2.5rem;
 }
 
 .navbar-group li {
@@ -47,11 +56,7 @@
 /* ////////////////////        Welcome Section        ///////////////////////////////////////////////////////////////////////////// */
 
 #welcome-section {
-    background: linear-gradient(#6F7190, #8C8DA6);
-}
-
-#welcome-section {
-    height: 100vh;
+    height: 90vh;
     text-align: center;
 }
 
@@ -74,9 +79,7 @@
 }
 
 .welcome-section-t {
-    margin: 0;
-    border: 0;
-    padding: 0;
+    color: var(--off-white);
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 

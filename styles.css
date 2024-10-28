@@ -45,4 +45,6 @@
 #welcome-section {
     height: 100vh;
     background: linear-gradient(#6F7190, #8C8DA6);
+    text-align: center;
+    
 }

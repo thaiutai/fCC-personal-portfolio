@@ -3,7 +3,8 @@
     --dark-grey-bg: #6F7190;
     --dark-grey-bg-comp: #8C8DA6;
     --bg-comp1: #A6A58C;
-    --bg-comp2: #908E6F; */
+    --bg-comp2: #908E6F;
+    --hdr-text-shadow: rgb(0, 0, 0, 0.2);
 }
 
 * {
@@ -33,6 +34,7 @@ body {
     align-items: center;            
     padding: 1rem;
     background-color: transparent;
+    text-shadow: 2px 2px 0 var(--hdr-text-shadow);
 }
 
 .navbar-group {
@@ -58,6 +60,7 @@ body {
 #welcome-section {
     height: 90vh;
     text-align: center;
+    color: var(--off-white);
 }
 
 .welcome-section-header {
@@ -70,25 +73,27 @@ body {
 }
 
 .welcome-section-header > h1 {
-    font-family: "Poppins", 'Times New Roman', Times, serif;
     font-size: 128px;
-}
-
-.welcome-section-header > p {
-    font-size: 30px;
-}
-
-.welcome-section-t {
-    color: var(--off-white);
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-shadow: 6px 6px 0px var(--hdr-text-shadow);
 }
 
 .welcome-section-header p {
-    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    text-shadow: 4px 4px 0px var(--hdr-text-shadow);
+    font-size: 30px;
 }
 
 /* ////////////////////        Project Section        ///////////////////////////////////////////////////////////////////////////// */
 
 #projects {
     height: 100vh;
+    background-color: var(--off-white);
+    color: var(--dark-grey-bg);
 }
+
+.project-tile.project-img {
+    object-fit: cover;
+    widt
+}
+
+/* ////////////////////        Keyframes Section        ///////////////////////////////////////////////////////////////////////////// */
+
